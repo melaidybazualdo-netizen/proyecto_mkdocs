@@ -1,0 +1,44 @@
+site_name: Documentación - Taller de Programación
+site_author: "Tu Nombre / Grupo"
+site_description: "Documentación oficial del proyecto final"
+
+# Configuración del servidor de desarrollo
+dev_addr: '127.0.0.1:8000'
+
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: default
+    primary: indigo
+    accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+# Navegación (incluye las secciones adicionales de la actividad 4.1)
+nav:
+  - Inicio: index.md
+  - Instalación y Requisitos: instalacion.md
+  - Arquitectura del Sistema: arquitectura.md
+  - Guía de Uso: guia-uso.md
+  - API / Módulos: api.md
+  - Diagramas de Clases: diagramas.md
+  - Pruebas Unitarias: pruebas.md
+  - Conclusiones: conclusiones.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
